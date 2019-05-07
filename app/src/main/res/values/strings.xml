@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NavOfThrones</string>
+    <string name="startk">Startk</string>
+    <string name="targaryer">Targaryer</string>
+    <string name="aegon">Aegon</string>
+    <string name="promise_me_need">Promise me,need</string>
+    <string name="jon_snow">Jon snow</string>
+
+    <string name="prince">The prince that was promised</string>
+</resources>

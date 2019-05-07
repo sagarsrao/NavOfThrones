@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nav_graph" app:startDestination="@id/mainFragment">
+
+    <fragment android:id="@+id/mainFragment" android:name="com.wolken.navofthrones.MainFragment"
+              android:label="MainFragment">
+        <action android:id="@+id/action_mainFragment_to_lyannaFragment" app:destination="@id/lyannaFragment"/>
+        <action android:id="@+id/action_mainFragment_to_rhegarFragment" app:destination="@id/rhegarFragment"/>
+    </fragment>
+    <fragment android:id="@+id/lyannaFragment" android:name="com.wolken.navofthrones.LyannaFragment"
+              android:label="LyannaFragment">
+        <action android:id="@+id/action_lyannaFragment_to_johnSnowFragment" app:destination="@id/johnSnowFragment"/>
+    </fragment>
+    <fragment android:id="@+id/rhegarFragment" android:name="com.wolken.navofthrones.RhegarFragment"
+              android:label="RhegarFragment">
+        <action android:id="@+id/action_rhegarFragment_to_johnSnowFragment" app:destination="@id/johnSnowFragment"/>
+    </fragment>
+    <fragment android:id="@+id/johnSnowFragment" android:name="com.wolken.navofthrones.JohnSnowFragment"
+              android:label="JohnSnowFragment">
+        <argument android:name="who am I" app:argType="string" android:defaultValue="No One"/>
+    </fragment>
+</navigation>
